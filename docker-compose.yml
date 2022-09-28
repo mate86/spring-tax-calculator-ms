@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  tax-calculator:
+    container_name: tax-calculator
+    image: tax-calculator
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - "8000:8080"
