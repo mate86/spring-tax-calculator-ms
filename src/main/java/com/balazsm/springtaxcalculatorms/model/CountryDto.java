@@ -1,9 +1,11 @@
 package com.balazsm.springtaxcalculatorms.model;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
+import io.swagger.annotations.ApiModel;
 import lombok.Data;
 
 @Data
+@ApiModel(value = "CountryDto", description = "Represents the country in JSON request")
 public class CountryDto {
 
     @JsonProperty(value = "country")
